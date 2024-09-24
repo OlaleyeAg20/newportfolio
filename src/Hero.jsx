@@ -1,5 +1,4 @@
 import avater from './assets/avater.png'
-import Button from './components/Button'
 
 function Hero(){
     let style = {
@@ -59,7 +58,9 @@ function Hero(){
                             <span className="lang">React</span>
                         </div>
                     </div>
-                    <Button text="Download CV" type="secondary" />
+                    <a href='/Resume.pdf' className='btn' download>
+                        <span>Download CV</span>
+                    </a>
                 </div>
                 <div className="aboutText">
                     <h1>

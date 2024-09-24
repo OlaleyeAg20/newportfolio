@@ -369,6 +369,7 @@ button:focus{
   background-image: url(assets/Skills.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 2rem;
 }
 
 .skillcard *{
@@ -380,16 +381,19 @@ button:focus{
 
 .skillchain{text-transform: uppercase;}
 
-.skillCircleContainer, .skillCircle{
+.skillCircle{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .skillCircleContainer{
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: auto;
+  gap: 2.5rem;
+  max-width: 240px;
+  margin-bottom: 2rem;
 }
 
 .skillCircle{
