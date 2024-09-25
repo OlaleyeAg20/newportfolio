@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import avater from './assets/avater.png'
 
 function Hero(){
+    let [popup, setPopup] = useState(false)
+
     let style = {
         color: 'var(--brand1)',
         fontSize: '2rem',
@@ -14,10 +17,10 @@ function Hero(){
 
     return (
         <section className='hero-section'>
-            <h1 style={style}>Developer</h1>
+            <h1 style={style}>Frontend Web Developer</h1>
             <div className="hero">
                 <div className="card">
-                    <img src={avater} alt="avater" />
+                    <img src={avater} alt="avater" onClick={() => setPopup(true)} />
                     <h1 style={h1style}>Ayomide</h1>
                     <p>Frontend Developer</p>
                     <div className="contacts">
@@ -49,7 +52,7 @@ function Hero(){
 <path d="M6.08111 4.6726C5.58051 4.63675 5.07805 4.70898 4.60782 4.88439C4.13762 5.05979 3.71064 5.33425 3.35584 5.68916L1.60584 7.43916L1.59873 7.44639C0.96118 8.1065 0.608399 8.99061 0.616374 9.9083C0.624348 10.826 0.99244 11.7038 1.64137 12.3528C2.2903 13.0017 3.16814 13.3698 4.08583 13.3778C5.00352 13.3857 5.88763 13.0329 6.54773 12.3954L6.55496 12.3883L7.55246 11.3908C7.78027 11.163 7.78027 10.7936 7.55246 10.5658C7.32466 10.338 6.95531 10.338 6.72751 10.5658L5.73378 11.5596C5.29408 11.9825 4.70616 12.2164 4.09597 12.2111C3.48417 12.2058 2.89894 11.9604 2.46633 11.5278C2.03371 11.0952 1.78831 10.51 1.783 9.89816C1.77769 9.28796 2.01164 8.70004 2.43458 8.26034L4.1808 6.51412C4.41734 6.27749 4.70209 6.09442 5.01558 5.97748C5.32906 5.86054 5.66403 5.81239 5.99777 5.83629C6.3315 5.86019 6.65619 5.95559 6.94981 6.11601C7.24344 6.27643 7.49913 6.49812 7.69954 6.76605C7.89251 7.02403 8.25808 7.07673 8.51606 6.88376C8.77403 6.69078 8.82673 6.32522 8.63376 6.06724C8.33315 5.66535 7.94961 5.33281 7.50918 5.09218C7.06874 4.85155 6.58171 4.70846 6.08111 4.6726Z" fill="#12F7D6"/>
 </svg>
 
-                            www.ayomide.com
+                            ayscript.vercel.app
                         </span>
                         <div className="languages">
                             <span className="lang">HTML</span>
@@ -91,6 +94,16 @@ function Hero(){
                     </div>
                 </div>
             </div>
+            {
+            popup &&
+            (<div className="popup" onClick={(e) => {
+                if(e.target == e.currentTarget){
+                    setPopup(false)
+                }
+            }}>
+                <img src={avater} alt="avater" />
+            </div>)
+            }
         </section>
     )
 }
