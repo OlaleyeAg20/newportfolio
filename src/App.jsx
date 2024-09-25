@@ -4,6 +4,7 @@ import Hero from './Hero'
 import './App.css'
 import Image from './assets/Image.png'
 import {Apps} from './components/ProjectCard'
+import Certifications from './components/Certifications'
 
 function App() {
 
@@ -80,6 +81,11 @@ I like to have my perspective and belief systems challenged so that I see the wo
         texts="I had the pleasure of working with these projects."
       />
       <Apps />
+      <Moduletitle
+        title="Certifications"
+        texts="Here is a collection of certifications I have earned."
+      />
+      <Certifications />
       {/* <ProjectCard /> */}
       {/* <Blog /> */}
     </>

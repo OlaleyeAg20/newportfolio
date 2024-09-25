@@ -124,20 +124,21 @@ function Apps() {
 // Styles
 const styles = `
   .project-card {
-    border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 16px;
     margin: 16px;
     max-width: 300px;
-    background-color: var(--brand1);
+    background-color: var(--bg2);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    color: var(--grey);
+    color: inherit;
   }
 
     .projectImage{
         width: 100%;
         aspect-ratio: 16/9;
         border-radius: 4px;
+        object-fit: cover;
+        opacity: 0.7;
     }
 
   .project-title {
@@ -148,22 +149,9 @@ const styles = `
 
   .project-description {
     font-size: 14px;
-    color: #586069;
     margin-bottom: 16px;
     height: 32px;
     overflow: hidden;
-  }
-
-  .project-stats {
-    display: flex;
-    margin-bottom: 12px;
-  }
-
-  .stat {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-    font-size: 14px;
   }
 
   .icon {

@@ -447,3 +447,69 @@ button:focus{
   max-width: 300px;
   cursor: pointer;
 }
+
+.certification{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cert-card{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: .75rem;
+  height: 375px;
+  border-radius: .5rem;
+  gap: .75rem;
+  background: var(--bg2);
+}
+
+.cert-card h2{
+  height: 50px;
+}
+
+.cert-card > *{
+  margin: 0;
+}
+
+.cert-card h2{
+  font-size: 1.1rem;
+}
+
+.certificateType{
+  margin-top: auto;
+}
+
+.cert-link{
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  align-self: flex-start;
+  border-radius: .25rem;
+  background: var(--bg1);
+}
+
+.cert-link:hover{
+  background: var(--css);
+}
+
+
+.cert-card > img{
+  border-radius: .25rem;
+}
+
+.courseProvider{
+  display: flex;
+  gap: 1rem;
+}
+
+.courseProvider span{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
