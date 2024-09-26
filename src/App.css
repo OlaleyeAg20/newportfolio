@@ -491,7 +491,7 @@ button:focus{
   text-align: center;
   align-self: flex-start;
   border-radius: .25rem;
-  background: var(--bg1);
+  background: var(--blue);
 }
 
 .cert-link:hover{
@@ -501,6 +501,8 @@ button:focus{
 
 .cert-card > img{
   border-radius: .25rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .courseProvider{
