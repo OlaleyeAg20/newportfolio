@@ -125,12 +125,15 @@ function Apps() {
 const styles = `
   .project-card {
     border-radius: 6px;
-    padding: 16px;
-    margin: 16px;
     max-width: 300px;
+    padding: 1rem;
     background-color: var(--bg2);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: inherit;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
     .projectImage{
@@ -154,33 +157,32 @@ const styles = `
     overflow: hidden;
   }
 
-  .icon {
-    margin-right: 4px;
-  }
-
   .project-languages {
     margin-bottom: 12px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .language {
-    background-color: #292f36D3;
+    background-color: var(--grey);
     color: white;
     border-radius: 3px;
     padding: 2px 4px;
     font-size: 12px;
-    margin-right: 8px;
   }
 
   .project-link {
     display: inline-block;
-    background-color: var(--bg1);
+    background-color: var(--css);
     color: #ffffff;
     text-decoration: none;
     padding: 6px 12px;
     border-radius: 3px;
     font-size: 14px;
     transition: background-color 0.2s ease;
+    text-align: center;
   }
 
   .project-link:hover {
@@ -188,11 +190,9 @@ const styles = `
   }
 
   .app {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
   }
 `
 
