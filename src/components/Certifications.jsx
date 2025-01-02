@@ -39,6 +39,13 @@ function CertificateCard(props){
 }
 
 const certificateList = [
+  {
+        certificateTitle: "Frontend Developer Career Path",
+        certificationType: "Proffessional Certificate",
+        certificateScreenshot: "./frontendcertificate.png",
+        verificationLink: "https://scrimba.com/certificate-cert2CsEjr6BTZmgNpTamXsLPdUMvHcunPqH8c",
+        courseProviders: [{name: 'Scrimba', logo: <Scrimba />}]
+    },
     {
         certificateTitle: "Learn JavaScript",
         certificationType: "Course Certificate",
