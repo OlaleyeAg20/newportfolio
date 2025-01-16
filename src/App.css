@@ -444,38 +444,39 @@ button:focus{
   left: 0;
   width: 100%;
   height: 100vh;
+  height: 100lvh;
   background: #1A1E23D2;
 }
 
 .popup img{
-  border-radius: 50%;
-  width: 80%;
-  max-width: 300px;
-  cursor: pointer;
+  width: 100%;
+  max-width: 480px;
+  transform-style: scale(0.9);
 }
 
 .certification{
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cert-card{
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 300px;
   padding: .75rem;
-  height: 375px;
   border-radius: .5rem;
   gap: .75rem;
   background: var(--bg2);
+  margin-inline: auto;
 }
 
 .cert-card h2{
-  height: 50px;
+  /* height: 50px; */
 }
 
 .cert-card > *{
@@ -487,7 +488,7 @@ button:focus{
 }
 
 .certificateType{
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .cert-link{
@@ -520,4 +521,10 @@ button:focus{
   display: flex;
   align-items: center;
   gap: .5rem;
+}
+
+.footer{
+  background: var(--bg2);
+  text-align: center;
+  padding: 2rem;
 }

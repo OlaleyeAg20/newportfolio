@@ -5,6 +5,7 @@ import './App.css'
 import Image from './assets/Image.png'
 import {Apps} from './components/ProjectCard'
 import Certifications from './components/Certifications'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -86,6 +87,7 @@ I like to have my perspective and belief systems challenged so that I see the wo
         texts="Here is a collection of certifications I have earned."
       />
       <Certifications />
+      <Footer />
       {/* <ProjectCard /> */}
       {/* <Blog /> */}
     </>
